@@ -1,0 +1,80 @@
+@import '../Header/Header'
+
+.shopByContainer
+    width: 80%
+    margin: 0 auto
+    // border: $border
+
+    .texts
+        // border: $border
+
+        h1
+            font-size: 3em
+            text-align: center
+            margin-bottom: 0
+
+        ul
+            list-style: none
+            display: flex
+            justify-content: center
+            padding: 0
+            // border: $border
+
+            li a
+                color: $primary-color
+                text-decoration: none
+                padding-left: 1em
+            
+            li:nth-of-type(2)::before
+                content:'>'
+                margin-left: 1em
+
+            li:nth-of-type(3)::before
+                content:'>'
+                margin-left: 1em
+    
+    .shopBySection
+        padding-top: 2em
+        width: 100%
+        margin: 0 auto
+        // border: $border
+
+        h4
+            text-align: left
+            color: $primary-color
+            padding-left: 1em
+
+        .imageContainer
+            display: flex
+            gap: 1em
+            justify-content: space-around
+            margin: 0 auto
+
+        
+            div
+                width: 18em
+                // border: $border
+                height: 10em
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 1.5em
+                font-weight: bold
+                color: white
+                letter-spacing: 0.05em
+                border-radius: 5px
+                cursor: pointer
+            
+            div:nth-of-type(1)
+                background-image: url(../../images/imag1.png)
+                background-repeat: no-repeat
+            div:nth-of-type(2)
+                background-image: url(../../images/image2.png)
+
+            div:nth-of-type(3)
+                background-image: url(../../images/image3.png)
+
+        h3
+            text-align: right
+            color: $primary-color
+            padding-right: 1em
